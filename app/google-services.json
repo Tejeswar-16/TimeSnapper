@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1043640515228",
+    "project_id": "time-snapper",
+    "storage_bucket": "time-snapper.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1043640515228:android:bc2b43dbf791ac84620b59",
+        "android_client_info": {
+          "package_name": "com.example.dcs_stopwatchapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCETLBb8ULkbnFEWFLhwyCC8-zdSlOBjOw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

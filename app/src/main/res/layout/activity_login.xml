@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="415dp"
+        android:layout_height="274dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/top_background" />
+
+    <TextView
+        android:id="@+id/tvLoginHead"
+        android:layout_width="253dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/caladea"
+        android:text="Welcome Back!"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="267dp"
+        android:layout_height="62dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:fontFamily="@font/caladea"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/material_dynamic_neutral70"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.043" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="267dp"
+        android:layout_height="62dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:fontFamily="@font/caladea"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/material_dynamic_neutral_variant70"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <ImageView
+        android:id="@+id/ivLogin"
+        android:layout_width="115dp"
+        android:layout_height="88dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword"
+        app:layout_constraintVertical_bias="0.302"
+        app:srcCompat="@drawable/btn_login" />
+
+    <TextView
+        android:id="@+id/tvNUSU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/caladea"
+        android:text="Not an User?  Sign Up"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogin"
+        app:layout_constraintVertical_bias="0.369" />
+
+    <TextView
+        android:id="@+id/tvLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/caladea"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/tvLoginHead" />
+
+    <TextView
+        android:id="@+id/tvForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/caladea"
+        android:text="Forgot Password?"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ivLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
